@@ -1,4 +1,4 @@
-# MegaEth Cap ANDS TekoFinance Auto Mint Bot
+# MegaEth Cap AND TekoFinance Auto Mint Bot
 
 ## Overview
 The **MegaEth TekoFinance and cap  Auto Mint Bot** is a simple Python tool to get  mint token in TekoFinance and cap . Mint once or daily, choose how many times, and check your balances. It’s easy, shows transaction links, and is great for testing Cap on MegaEth’s fast testnet!
