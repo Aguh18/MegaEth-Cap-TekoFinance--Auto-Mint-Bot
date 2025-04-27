@@ -1,4 +1,4 @@
-# MegaEth Cap cUSD Auto Mint Bot
+# MegaEth Cap ANDS TekoFinance Auto Mint Bot
 
 ## Overview
 The **MegaEth TekoFinance and cap  Auto Mint Bot** is a simple Python tool to get  mint token in TekoFinance and cap . Mint once or daily, choose how many times, and check your balances. It’s easy, shows transaction links, and is great for testing Cap on MegaEth’s fast testnet!
@@ -22,8 +22,8 @@ The **MegaEth TekoFinance and cap  Auto Mint Bot** is a simple Python tool to ge
    Clone or create a folder for the code:
 
    ```bash
-   git clone https://github.com/<your-username>/MegaEth_Cap_cUSD_Auto_Mint.git
-   cd MegaEth_Cap_cUSD_Auto_Mint
+   git clone https://github.com/Aguh18/MegaEth-Cap-TekoFinance-Auto-Mint-Bot.git
+   cd MegaEth-Cap-TekoFinance-Auto-Mint-Bot.git
    ```
 
 
