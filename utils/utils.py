@@ -95,7 +95,7 @@ def show_balance(address, web3, token=None):
         balance = check_token_balance(address, web3)
         loging.log_info(f"ETH Balance: {balance:.18f} ETH".rstrip('0').rstrip('.'))
         
-def mint_tokens(private_key, w3):
+def mint_tokens(private_key, w3, token):
     try:
         # Initialize wallet
         account = w3.eth.account.from_key(private_key)
@@ -103,10 +103,10 @@ def mint_tokens(private_key, w3):
         recipient_address = w3.to_checksum_address("0xd78a1e290daff294999d9ac6bbffd2e41fad7490")
         
         # Create contract instance
-        contract = w3.eth.contract(address=config.CONTRACT_ADDRESS, abi=config.CONTRACT_ABI)
+        contract = w3.eth.contract(address=config.TOKENS[token]["address"], abi=config.CONTRACT_ABI)
         
         # Build transaction
-        tx = contract.functions.mint(recipient_address, config.TOKEN_AMOUNT).build_transaction({
+        tx = contract.functions.mint(recipient_address, config.TOKENS[token]["token_amount"]).build_transaction({
             'chainId': config.CHAIN_ID,
             'gas': 100000,
             'gasPrice': w3.eth.gas_price,
@@ -125,7 +125,7 @@ def mint_tokens(private_key, w3):
         receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
         
         if receipt.status == 1:
-            loging.log_success("Mint successful! 1000 cUSD credited.")
+            loging.log_success(f"Mint successful! {token} credited.")
             return True
         else:
             loging.log_error("Mint failed!")

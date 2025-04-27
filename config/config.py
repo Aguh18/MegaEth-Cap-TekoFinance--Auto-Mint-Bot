@@ -1,13 +1,16 @@
 from web3 import Web3
 
 RPC_URL='https://carrot.megaeth.com/rpc'
-CONTRACT_ADDRESS = Web3.to_checksum_address("0xe9b6e75c243b6100ffcb1c66e8f78f96feea727f")
 TOKEN_AMOUNT = Web3.to_wei(1000, 'ether')
 CHAIN_ID=6342
 EXPLORER_URL= "https://www.megaexplorer.xyz/"
 
 TOKENS = {
-    "cUSD": {"address": Web3.to_checksum_address("0xE9b6e75C243B6100ffcb1c66e8f78F96FeeA727F"), "decimals": 18},
+   
+    "tkUSDC": {"address": Web3.to_checksum_address("0xfaf334e157175ff676911adcf0964d7f54f2c424"), "decimals": 6, "token_amount":  Web3.to_wei(0.000000002, "ether")},
+    "tkWBTC": {"address": Web3.to_checksum_address("0xf82ff0799448630eb56ce747db840a2e02cde4d8"), "decimals": 8, "token_amount":  Web3.to_wei(0.000000000002, "ether")},
+    "tkETH": {"address": Web3.to_checksum_address("0x176735870dc6c22b4ebfbf519de2ce758de78d94"), "decimals": 18, "token_amount": Web3.to_wei(1, 'ether')},
+    "cUSD": {"address": Web3.to_checksum_address("0xE9b6e75C243B6100ffcb1c66e8f78F96FeeA727F"), "decimals": 18, "token_amount": Web3.to_wei(1000, 'ether')},
     "ETH": {"address": None, "decimals": 18},
 }
 
