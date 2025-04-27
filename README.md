@@ -1,10 +1,13 @@
 # MegaEth Cap cUSD Auto Mint Bot
 
 ## Overview
-The **MegaEth Cap cUSD Auto Mint Bot** is a simple Python tool to get 1000 cUSD testnet tokens . Mint once or daily, choose how many times, and check your balances. It’s easy, shows transaction links, and is great for testing Cap on MegaEth’s fast testnet!
+The **MegaEth TekoFinance and cap  Auto Mint Bot** is a simple Python tool to get  mint token in TekoFinance and cap . Mint once or daily, choose how many times, and check your balances. It’s easy, shows transaction links, and is great for testing Cap on MegaEth’s fast testnet!
 
 ## Features
-- Mint 1000 cUSD once or daily.
+- Mint 1000 cUSDC.
+- Mint 2000 tkUsdc .
+- Mint 1 tkETH .
+- Mint 0.02 tkWBTC .
 - Run multiple mints in one go.
 - Shows transaction links and status.
 
