@@ -100,7 +100,7 @@ def mint_tokens(private_key, w3, token):
         # Initialize wallet
         account = w3.eth.account.from_key(private_key)
         wallet_address = account.address
-        recipient_address = w3.to_checksum_address("0xd78a1e290daff294999d9ac6bbffd2e41fad7490")
+        recipient_address = w3.to_checksum_address(wallet_address)
         
         # Create contract instance
         contract = w3.eth.contract(address=config.TOKENS[token]["address"], abi=config.CONTRACT_ABI)
